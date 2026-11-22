@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#F4F5F7</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="ink">#14161A</color>
+    <color name="ink_soft">#2A2D33</color>
+    <color name="muted">#8A909A</color>
+    <color name="hairline">#E9EBEF</color>
+    <color name="accent">#2F6BFF</color>
+    <color name="ok">#22C55E</color>
+    <color name="chip">#F0F2F5</color>
+    <color name="scrim">#4D000000</color>
+    <color name="panel">#FDFDFE</color>
+    <color name="launcher_bg">#14161A</color>
+</resources>

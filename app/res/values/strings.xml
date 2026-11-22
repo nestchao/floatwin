@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">小窗</string>
+    <string name="subtitle">一点，把任意应用放进悬浮窗</string>
+
+    <string name="perm_overlay">悬浮窗权限</string>
+    <string name="perm_root">Root 权限</string>
+    <string name="state_on">已开启</string>
+    <string name="state_off">未开启</string>
+    <string name="state_ok">已授权</string>
+    <string name="state_no">未授权</string>
+    <string name="state_checking">检测中</string>
+    <string name="state_unknown">未检测</string>
+    <string name="action_grant">去开启</string>
+    <string name="action_check">检测</string>
+
+    <string name="btn_open">开启悬浮球</string>
+    <string name="btn_close">关闭悬浮球</string>
+    <string name="hint">点悬浮球选应用，拖动可移动，长按回到这里。清理后台后会自动恢复</string>
+
+    <string name="root_hint">没有 Root？打开 KernelSU →「超级用户」→ 找到「小窗」→ 打开开关，回来点「检测」即可。若 KernelSU 里看不到本应用，先回到桌面再打开本应用一次。</string>
+    <string name="open_ksu">打开 KernelSU</string>
+    <string name="toast_no_ksu">没有找到 KernelSU</string>
+
+    <string name="search_hint">搜索应用</string>
+    <string name="toast_opened">已打开小窗</string>
+    <string name="toast_failed">打开失败：%1$s</string>
+    <string name="toast_overlay_needed">请先授予悬浮窗权限</string>
+    <string name="toast_root_ok">Root 正常</string>
+    <string name="toast_root_no">没有拿到 Root</string>
+    <string name="toast_bubble_on">悬浮球已开启</string>
+    <string name="toast_bubble_off">已关闭悬浮球</string>
+
+    <string name="footer">v1.1 · 不改系统 · 随时卸载</string>
+    <string name="notif_channel">悬浮球</string>
+    <string name="notif_title">小窗悬浮球运行中</string>
+    <string name="notif_text">点按悬浮球选择应用</string>
+</resources>
