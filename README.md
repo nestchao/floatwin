@@ -1,6 +1,6 @@
 # 小窗 · FloatWin
 
-[![Build APK](https://github.com/nestchao/floatwin/actions/workflows/build.yml/badge.svg)](https://github.com/nestchao/floatwin/actions/workflows/build.yml)
+[![Build APK](https://github.com/nestchao/floatwin/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/nestchao/floatwin/actions/workflows/build.yml)
 [![Release](https://img.shields.io/github/v/release/nestchao/floatwin)](https://github.com/nestchao/floatwin/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 

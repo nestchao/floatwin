@@ -31,7 +31,7 @@
     <string name="toast_bubble_on">悬浮球已开启</string>
     <string name="toast_bubble_off">已关闭悬浮球</string>
 
-    <string name="footer">v1.1 · 不改系统 · 随时卸载</string>
+    <string name="footer">v1.1.1 · 不改系统 · 随时卸载</string>
     <string name="notif_channel">悬浮球</string>
     <string name="notif_title">小窗悬浮球运行中</string>
     <string name="notif_text">点按悬浮球选择应用</string>

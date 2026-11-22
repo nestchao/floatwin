@@ -16,15 +16,33 @@ public class BootReceiver extends BroadcastReceiver {
         if (!Settings.canDrawOverlays(context)) {
             return;
         }
-        Intent service = new Intent(context, BubbleService.class);
-        try {
-            if (Build.VERSION.SDK_INT >= 26) {
-                context.startForegroundService(service);
-            } else {
-                context.startService(service);
+        // 临时 root（KernelSU LKM 等）重启后会消失，这时不要起一个"点不开应用"的假悬浮球。
+        final PendingResult pending = goAsync();
+        final Context app = context.getApplicationContext();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                boolean root = false;
+                try {
+                    root = Launcher.hasRoot();
+                } catch (Throwable ignored) {
+                }
+                if (root) {
+                    try {
+                        Intent service = new Intent(app, BubbleService.class);
+                        if (Build.VERSION.SDK_INT >= 26) {
+                            app.startForegroundService(service);
+                        } else {
+                            app.startService(service);
+                        }
+                    } catch (Throwable ignored) {
+                        // background start may be restricted on some builds
+                    }
+                } else {
+                    Prefs.setBubbleOn(app, false);
+                }
+                pending.finish();
             }
-        } catch (Throwable ignored) {
-            // background start may be restricted on some builds
-        }
+        }, "floatwin-boot").start();
     }
 }

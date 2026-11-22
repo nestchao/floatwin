@@ -69,8 +69,8 @@ Write-Host "==> link resources"
     --java $genDir `
     --min-sdk-version 29 `
     --target-sdk-version 36 `
-    --version-code 2 `
-    --version-name '1.1' `
+    --version-code 3 `
+    --version-name '1.1.1' `
     --auto-add-overlay
 if ($LASTEXITCODE -ne 0) { throw 'aapt2 link failed' }
 

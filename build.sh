@@ -52,8 +52,8 @@ KS="$ROOT/debug.keystore"
 APK="$DIST/floatwin.apk"
 
 # Keep in sync with build.ps1
-VERSION_CODE=2
-VERSION_NAME=1.1
+VERSION_CODE=3
+VERSION_NAME=1.1.1
 
 rm -rf "$BUILD" "$DIST"
 mkdir -p "$BUILD/gen" "$BUILD/classes" "$BUILD/dex" "$DIST"

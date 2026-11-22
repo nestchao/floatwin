@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.1
+
+- 开机自启前先检查 root：临时 root 重启后消失时，不再启动一个「点不开应用」的假悬浮球
+- 文档：截图裁掉状态栏、CI 徽章固定 main 分支
+
 ## v1.1
 
 - 新增 **root 守护进程**：MIUI「清理后台」后悬浮球自动恢复（`/data/local/tmp/.floatwin_watch.sh`）
